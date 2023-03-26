@@ -15,6 +15,8 @@
   flex:1;
   background-color: #343541;
   position: relative;
+  overflow:hidden
+
 }
 .addchat{
   background-color: #202123;
@@ -33,12 +35,11 @@
 
 .chat-input{
   padding: 24px;
-
+  background-color: #40414f;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-
 }
 
 .chat-input-textarea{
@@ -56,7 +57,9 @@
 
 .chat-log{
   text-align: left;
-
+   overflow-x: hidden;
+   overflow-y: scroll;
+  height: 87.5vh;
 }
 
 .chat-message.chatgpt{

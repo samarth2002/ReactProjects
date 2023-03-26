@@ -1,5 +1,4 @@
 
-// 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
 
 import { Configuration, OpenAIApi } from "openai";
 import express from "express"
@@ -8,7 +7,7 @@ import bodyParser from "body-parser";
 
 const configuration = new Configuration({
     organization: "org-SjIxKEfJ6GIbHtCx6MRzR3A8",
-    apiKey: "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",
+    apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 // const response = await openai.listEngines();
@@ -30,7 +29,7 @@ app.post('/',async (req,res)=>{
             model: "text-davinci-003",
             prompt: `${message}`,
             max_tokens: 100,
-            temperature: 0.5,
+            temperature: 0.8,
         })
         console.log(response.data.choices[0].text)
         res.json({
